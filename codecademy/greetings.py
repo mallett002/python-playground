@@ -1,6 +1,17 @@
 def print_hello():
     print("hello world!")
 
+def strings():
+    name = 'Billium'
+    town = 'Whoville'
+
+    str1 = '{} is from {}'.format(name, town)
+    str2 = f'{name} is from {town}'
+
+    print(str1)
+    print(str2)
+
+
 
 def greet_someone():
     name = input("What's your name? ")
@@ -143,6 +154,7 @@ def controlling_loops():
 
 
 def main():
+    strings()
     # greet_someone()
     # variables()
     # data_types()
