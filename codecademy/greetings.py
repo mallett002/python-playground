@@ -77,11 +77,80 @@ def operators():
         print("quack") # no quack
 
 
+def if_statements():
+    score = 82
+
+    if score >= 92:
+        print('Your final grade is an A')
+ 
+    elif score >= 85:
+        print('Your final grade is a B')
+    
+    elif score >= 70:
+        print('Your final grade is a C')
+    
+    else:
+        print('Talk with your instructor about your grade!')
+
+
+def for_loops():
+    # nums = [1, 2, 3, 4, 5]
+
+    # for num in nums:
+    #     print(num + 1)
+
+    # do something 3 times:
+    for i in range(3):
+        print(i)
+
+
+def while_loops():
+    i = 1
+
+    while i < 6:
+        print(i)
+        i += 1
+
+def controlling_loops():
+    names = ['Joyce', 'Hannah', 'Manny', 'Manoj', 'Ezekiel']
+
+    print("pass keyword:")
+    # Pass: place in condition, if true, nothing gets executed
+    # similar to continue, but does not skip to next iteration
+    for name in names:
+        if 'j' in name.lower():
+            pass
+        else:
+            print(name)
+
+    print("\nbreak keyword:")
+
+    for name in names:
+        if 'h' in name.lower():
+            break
+        else:
+            print(name)
+    
+    print("\ncontinue keyword:")
+    # continue skips to next iteration
+
+    for name in names:
+        if 'm' in name.lower():
+            continue
+        else:
+            print(name)
+
+
+
 def main():
     # greet_someone()
     # variables()
     # data_types()
-    operators()
+    # operators()
+    # if_statements()
+    # for_loops()
+    # while_loops()
+    controlling_loops()
 
 
 if __name__ == '__main__':
