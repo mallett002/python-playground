@@ -152,9 +152,59 @@ def controlling_loops():
             print(name)
 
 
+def error_handling():
+    nums = [5, 2, 3, 10]
+
+    try:
+        avg = sum(nums) / len(nums)
+
+        print('Avg:', avg)
+
+    except:
+        print('something went wrong')
+
+    finally:
+        print('you did it')
+
+
+def factorial(num):
+    print("num: ", num)
+
+    if num == 1:
+        return 1
+
+    return num * factorial(num - 1)
+
+
+def lambdas():
+    #lambda [args]: [expression]
+
+    square_lambda = lambda x: x ** 2
+
+    greeting = lambda name: f"Hello, {name}!"
+
+    # use with lists
+    numbers = [1, 2, 3, 4, 5]
+
+    # map
+    mapped = list(map(lambda x: x ** 2, numbers))
+    print(f"mapped {mapped}")
+
+    # filter
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+
+    filtered = list(filter(lambda x: x % 2 == 0, numbers))
+    print(f"filtered {filtered}")
+
+    # sorted (list of tuples)
+    students = [('Alice', 'A', 15), ('Bob', 'B', 12), ('Charlie', 'A', 20)]
+    
+    sortedStudents = sorted(students, key=lambda x: x[2])
+    print(f"sortedStudents {sortedStudents}")
+
 
 def main():
-    strings()
+    # strings()
     # greet_someone()
     # variables()
     # data_types()
@@ -162,8 +212,12 @@ def main():
     # if_statements()
     # for_loops()
     # while_loops()
-    controlling_loops()
+    # controlling_loops()
+    # error_handling()
+    # print(factorial(5))
+    lambdas()
 
 
 if __name__ == '__main__':
     main()
+
