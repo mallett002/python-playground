@@ -203,6 +203,11 @@ def lambdas():
     print(f"sortedStudents {sortedStudents}")
 
 
+class Dog:
+    # this is an empty class
+    pass
+
+
 def main():
     # strings()
     # greet_someone()
