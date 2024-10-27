@@ -47,7 +47,7 @@ def lists():
     print(lst3)
 
     # .pop(index: int)
-    # removes item at index. if no index, removes last item
+    # Removes item at index. If no index provided, removes last item
     print(lst2)
     print(lst2.pop(2)) # --> returns 2
     print(lst2)

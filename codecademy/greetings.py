@@ -105,10 +105,10 @@ def if_statements():
 
 
 def for_loops():
-    # nums = [1, 2, 3, 4, 5]
+    nums = [1, 2, 3, 4, 5]
 
-    # for num in nums:
-    #     print(num + 1)
+    for num in nums:
+        print(num + 1)
 
     # do something 3 times:
     for i in range(3):
